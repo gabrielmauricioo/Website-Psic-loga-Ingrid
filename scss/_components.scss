@@ -1,0 +1,198 @@
+.btn-primary{
+  border-radius: 15px;
+  background: $purple-10;
+  display: inline-block;
+  padding: 1.8rem 9.7rem;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: background-color .5s ease;
+  &:hover{
+    background: #9A5DF0;
+  }
+  @include respo ('tablet'){
+    padding: 1.8rem 5.7rem;
+  }
+  @include respo('mobile'){
+    font-size: 1.6rem;
+    padding: 1.6rem 3.5rem;
+    border-radius: 15px;
+
+  }
+  
+}
+.btn-secondary{
+  border-radius: 15px;
+  background: #FFFFFF;
+  display: inline-block;
+  padding: 2rem 2.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color .5s ease;
+  &:hover{
+    background: #9A5DF0;
+  }
+  @include respo ('tablet'){
+    padding: 2rem 2rem;
+
+  }
+  @include respo ('mobile'){
+    font-size: 1.6rem;
+    padding: 2rem 2rem;
+  }
+
+}
+
+.btn-insta{
+display: flex;
+font-size: 20px;
+font-weight: 600;
+line-height: 140%;
+letter-spacing: 3.2px;
+border-radius: 15px;
+background: $purple-10;
+padding: 1.8rem 5.5rem;
+@include respo('mobile'){
+  font-size: 1.6rem;
+  padding: 1.8rem 4.2rem;
+}
+
+}
+
+.l-card{
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 15px;
+  background: linear-gradient(93deg, #D2B2FF 43.05%, #FFBFFB 156%);
+  box-shadow: 13px 11px 13.4px -5px rgba(0, 0, 0, 0.17);
+  width: 100%;
+  max-width: 514.795px;
+  height: 90px;
+  margin-bottom: 4.2rem;
+  p{
+    font-size: 1.9rem;
+    width: 375.05px;
+  }
+  img{
+    margin-left: 3rem;
+
+  }
+  @include respo ('tablet'){
+    width: 42rem;
+    height: 8rem;
+
+    p{
+      font-size: 1.6rem;
+
+    }
+
+  }
+  @include respo('mobile'){
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 40.3rem;
+    height: 68px;
+
+    p{
+      font-size: 1.4rem;
+      width: 28.1rem;
+    }
+  }
+  @include respo('mobile2'){
+    gap: 1rem;
+    width: 100%;
+    max-width: 34rem;
+    height: 68px;
+
+    p{
+      font-size: 1.4rem;
+      width: 28.1rem;
+    }
+  }
+}
+
+.r-card{
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 15px;
+  background: linear-gradient(88deg, #FFBFFB -65.32%, #D2B2FF 67.25%);
+  box-shadow: 13px 11px 13.4px -5px rgba(0, 0, 0, 0.17);
+  width: 100%;
+  max-width: 514.795px;
+  height: 90px;
+  margin-bottom: 4.2rem;
+  p{
+    font-size: 1.9rem;
+    width: 375.05px;
+  }
+  img{
+    margin-left: 3rem;
+
+  }
+  @include respo ('tablet'){
+    width: 42rem;
+    height: 8rem;
+
+    p{
+      font-size: 1.6rem;
+
+    }
+
+  }
+  @include respo('mobile'){
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 40.3rem;
+    height: 68px;
+
+    p{
+      font-size: 1.4rem;
+      width: 28.1rem;
+    }
+  }
+  @include respo('mobile2'){
+    gap: 1rem;
+    width: 100%;
+    max-width: 34rem;
+    height: 68px;
+
+    p{
+      font-size: 1.4rem;
+      width: 28.1rem;
+    }
+  }
+}
+
+.card-testimonials{
+  .total{
+    // position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background:rgba(255, 255, 255, 0.25);
+    width: 304px;
+    height: 315px;
+    border-radius: 2.2rem;
+    padding-top: 4.2rem;
+    
+    p{
+      width: 232px;
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+      
+    }
+  }
+  @include respo('tablet'){
+    .total{
+      width: 29.2rem;
+      height: 30.4rem;
+      border-radius: 2.2rem;
+      padding-top: 4.2rem;
+
+    }
+  }
+  
+}

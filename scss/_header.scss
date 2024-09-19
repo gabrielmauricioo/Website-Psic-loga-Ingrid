@@ -1,0 +1,51 @@
+header {
+  padding: .8rem 0;
+  background: $purple-10;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .right {
+      nav {
+        ul {
+          display: flex;
+          flex-direction: row;
+          gap: 6rem;
+
+          li {
+            font-size: 1.6rem;
+            font-weight: 300;
+
+            a {
+              color: $gray-100;
+              transition: color 0.3s ease;
+              &:hover {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  }
+  @include respo('laptop'){
+    .hero-content{
+      nav{
+        ul{
+          margin-right: 2rem;
+          ;
+        }
+      }
+    }
+      
+  }
+  @include respo('mobile'){
+    display: none;
+  }
+}

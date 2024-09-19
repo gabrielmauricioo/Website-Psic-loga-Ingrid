@@ -1,0 +1,713 @@
+.s-hero{
+  padding-top: 15rem;
+  .hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+      width: 100%;
+      max-width: 72rem;
+      
+     
+      h1{
+        margin-top: 3.2rem;
+        margin-bottom: 2.4rem;
+        font-size: 6.4rem;
+      }
+      h3{
+        font-size: 2.4rem;
+        font-weight: 300;
+        margin-bottom: 5.6rem;
+      }
+    }
+    .right{
+      img{
+        max-width:610px ;
+        width: 100%;
+        margin-left: 15rem;
+      }
+    }
+    @include respo('laptop'){
+      padding-bottom: 4rem;
+      padding-top: 4rem;
+      .left{
+        width: 100%;
+        max-width: 53rem;
+        margin-left: 8rem;
+        h1{
+          font-size: 5.6rem;
+        }
+        h3{
+          font-size: 2rem;
+        }
+      }
+      .right{
+        img{
+          width: 90%;
+          margin-left: 7rem;
+        }
+
+      }
+    }
+    
+  }
+  @include respo('laptop2'){
+    .hero-content{
+      .right{
+        img{
+          margin-left: 5rem;
+        }
+
+      }
+    }
+
+  }
+  @include respo('tablet'){
+    .hero-content{
+      padding-top: 1rem;
+      .left{
+        width: 100%;
+        max-width: 47rem;
+        margin-left: 4rem;
+        h1{
+          font-size: 4.2rem;
+          margin-bottom: 1.2rem;
+        }
+        h3{
+          font-size: 1.6rem;
+          margin-bottom: 3.2rem;
+        }
+
+      }
+      .right{
+        img{
+          margin-left: 4rem;
+          width: 96%;
+        }
+      }
+    }
+
+  }
+  @include respo('mobile'){
+    padding-top: 5rem;
+    .hero-content{
+     @include flex-mobile;
+     .left{
+      margin-bottom: 4.4rem;
+      margin-left: .8rem;
+      @include flex-mobile;
+      text-align: center;
+      h1{
+        font-size: 4rem;
+       
+      }
+      h3{
+        margin-top: .2rem;
+        margin-bottom: 2.4rem;
+        font-size: 1.8rem;
+        width: 100%;
+        max-width: 38.6rem;
+      }
+     }
+     .right{
+      @include flex-mobile;
+     }
+    }
+  }
+  @include respo('mobile2'){
+    padding-top: 5rem;
+    .hero-content{
+     @include flex-mobile;
+     .left{
+      margin-bottom: 4.4rem;
+      margin-left: .8rem;
+      @include flex-mobile;
+      text-align: center;
+      h1{
+        font-size: 4rem;
+       
+      }
+      h3{
+        margin-top: .2rem;
+        margin-bottom: 2.4rem;
+        font-size: 1.8rem;
+        width: 100%;
+        max-width: 38.6rem;
+      }
+     }
+     .right{
+      @include flex-mobile;
+      img{
+        width: 90%;
+      }
+     }
+    }
+  }
+}
+
+.s-benefits{
+  padding-top: 10rem;
+  overflow-x: hidden;
+  
+  .hero-content{
+    
+    .txt{
+      @include flexCenterJustify;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 8rem;
+      h2{
+        font-size: 4rem;
+        max-width: 64.4rem;
+        width: 100%;
+        span{
+          font-weight: 400;
+        }
+        margin-bottom: 2.4rem;
+      }
+      p{
+        font-size: 2rem;
+        max-width: 85.4rem;
+        width: 100%;
+      }
+
+    }
+    .card{
+      
+      @include flexTotalCenter;
+      gap: 3.2rem;
+      
+    
+    }
+  }
+  @include respo ('tablet'){
+    .hero-content{
+      .txt{
+        h2{
+          font-size: 3.2rem;
+        }
+        p{
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  @include respo('mobile'){
+    
+    padding-top: 10rem;
+    .hero-content{
+     @include flex-mobile;
+     .txt{
+      width: 100%;
+      
+      @include flex-mobile;
+      margin-bottom: 4rem;
+      h2{
+        font-size: 3rem;
+        width: 100%;
+        max-width: 40.3rem;
+      }
+      p{
+        width: 100%;
+        width: 383px;
+      }
+     }
+     .card{
+      margin-top: 1rem;
+      @include flex-mobile;
+      gap: 0rem;
+     }
+    
+    }
+  }
+  @include respo('mobile2'){
+    
+    padding-top: 10rem;
+    .hero-content{
+     @include flex-mobile;
+     .txt{
+      width: 100%;
+      
+      @include flex-mobile;
+      margin-bottom: 4rem;
+      h2{
+        font-size: 3rem;
+        width: 100%;
+        max-width: 40.3rem;
+      }
+      p{
+        width: 100%;
+        width: 34.3rem;
+      }
+     }
+     .card{
+      margin-top: 1rem;
+      @include flex-mobile;
+      gap: 0rem;
+     }
+    
+    }
+  }
+}
+
+.s-about{
+  background: url('/img/fundo.webp') center/cover fixed no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  margin-top: 10rem;
+  .hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.2rem;
+
+    .right{
+      margin-bottom: 4rem;
+      h3{
+        font-size: 4rem;
+        width: 31rem;
+        margin-bottom: 2.4rem;
+      }
+      p{
+        font-size: 1.6rem;
+        width: 472px;
+        margin-bottom: 1.2rem;
+        line-height: 150%;
+      }
+      .btn-secondary{
+        margin-top: 4rem;
+      }
+    }
+  }
+  @include respo ('tablet'){
+    .hero-content{
+      .left{
+        img{
+          max-width: 48rem;
+          width: 100%
+        }
+
+      }
+      .right{
+        h3{
+          font-size: 3.2rem;
+          width: 26rem;
+          margin-bottom: 1.2rem;
+        }
+        p{
+          width: 40rem;
+          margin-bottom: .8rem;
+        }
+        .btn-secondary{
+          margin-top: 3.2rem;
+        }
+      }
+    }
+  }
+  @include respo('mobile'){
+    padding-top: 6rem;
+    .hero-content{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+
+      .left{
+          max-width: 38rem;
+          width: 100%
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        h3{
+          margin-bottom: 2.4rem
+        }
+        
+
+      }
+    }
+
+  }
+  @include respo('mobile2'){
+    padding-top: 6rem;
+    .hero-content{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+
+      .left{
+          max-width: 38rem;
+          width: 100%
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        h3{
+          margin-bottom: 2.4rem
+        }
+        p{
+          width: 100%;
+          
+        }
+        
+
+      }
+    }
+
+  }
+  
+}
+
+.s-approach{
+  padding: 5rem 0;
+  .hero-content{
+    @include flexTotalCenter;
+    gap: 13.8rem;
+    h4{
+      font-size: 3.6rem;
+      font-weight: 300;
+
+    }
+    h3{
+      margin-top: -1rem;
+      font-size: 40px;
+      font-weight: 600;
+      color: $purple-20;
+      margin-bottom: 2.4rem;
+    }
+    p{
+      width: 52.2rem;
+      font-size: 1.6rem;
+      line-height: 150%; 
+      margin-bottom: 1.2rem;
+
+    }
+
+  }
+  @include respo('laptop'){
+    .hero-content{
+      gap: 9rem;
+      .left{
+        margin-left: 3rem;
+      }
+      .right{
+        img{
+          width: 96%;
+        }
+
+      }
+    }
+  }
+  @include respo('tablet'){
+    .hero-content{
+      .left{
+        h3{
+          font-size: 3.2rem;
+        }
+        h4{
+          font-size: 2.8rem;
+        }
+        p{
+          max-width:48.2rem ;
+          width: 100%;
+        }
+      }
+      .right{
+        img{
+          max-width: 40rem;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+  @include respo('mobile'){
+    .hero-content{
+      gap: 3.2rem;
+      @include flex-mobile;
+      .left{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3{
+          
+          margin-bottom: 2.4rem;
+        }
+        h4{
+          margin-bottom: 1.2rem;
+        }
+      }
+      .right{
+        margin-top: 2rem;
+        img{
+          width: 100%;
+          max-width: 30rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+
+  }
+}
+
+.s-testimonials{
+  padding: 10rem 0;
+  background: url('/img/fundo.webp') center/cover fixed no-repeat;
+  .hero-content{
+    @include flexTotalCenter;
+    gap: 8rem;
+    .card-testimonials{
+      position: relative;
+      .borboleta{
+        position: absolute;
+        top: -6rem;
+        left: -9rem;
+      }
+      .borboleta2{
+        width: 50%;
+        position: absolute;
+        bottom: -4rem;
+        right: -8rem;
+
+      }
+    }
+  
+  }
+  @include respo('tablet'){
+    .hero-content{
+      gap: 3rem;
+    }
+
+  }
+  @include respo('mobile'){
+    .hero-content{
+      @include flex-mobile;
+      .card-testimonials{
+        .borboleta2{
+          width: 45%;
+          position: absolute;
+          bottom: -5rem;
+          right: -2rem;
+
+        }
+      }
+    }
+  }
+  @include respo('mobile2'){
+    .hero-content{
+      @include flex-mobile;
+      .card-testimonials{
+        .borboleta2{
+          width: 45%;
+          position: absolute;
+          bottom: -5rem;
+          right: -2rem;
+
+        }
+      }
+    }
+  }
+
+}
+
+.s-insta{
+  .hero-content{
+    @include flexTotalCenter;
+    gap: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .right{
+      h3{
+        width: 100%;
+        max-width: 34.3rem ;
+        font-size: 4rem;
+        color: $purple-20;
+        font-weight: 600;
+        margin-bottom:2rem ;
+        span{
+          font-weight: 400;
+        }
+      }
+      p{
+        width: 100%;
+        max-width: 30.5rem;
+        font-size: 1.6rem;
+        line-height: 140%; 
+        span{
+          font-weight: 600;
+        }
+        margin-bottom:3.2rem;
+
+      }
+    }
+  }
+  @include respo('mobile'){
+    .hero-content{
+      gap: 2rem;
+      @include flex-mobile;
+      .left{
+        img{
+          margin-top: -2rem;
+          width: 90%;
+          margin-left: 2rem;
+        }
+      }
+      .right{
+        @include flex-mobile;
+        text-align: center;
+        h3{
+          font-size: 3.2rem;
+        }
+
+      }
+    }
+  }
+  
+}
+
+.s-contacts{
+  padding: 9rem 0;
+  background: url('/img/fundo.webp') center/cover fixed no-repeat;
+  .hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .left{
+      .txt1{
+        h4{
+          font-size: 3.2rem;
+          margin-bottom: 1.2rem;
+        }
+        p{
+          font-size: 2rem;
+          margin-bottom: 1rem;  
+        }
+      }
+      .txt2{
+        display: flex;
+        gap: .8rem;
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+    .right{
+      h4{
+        font-size: 3.2rem;
+        margin-bottom: 1.2rem;
+        width: 100%;
+        max-width: 21.2rem;
+
+      }
+      .redes{
+        display: flex;
+        justify-content: center;
+        gap: 2.4rem;
+      }
+    }
+
+  }
+  @include respo('laptop'){
+    .hero-content{
+      .left{
+        margin-left: 2.4rem;
+      }
+      .right{
+        margin-right: 2.4rem;
+      }
+    }
+  }
+  @include respo('mobile'){
+    .hero-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .left{
+        margin-bottom: 8rem;
+        margin-left: 0rem;
+        @include flex-mobile;
+        .txt1{
+          @include flex-mobile;
+        }
+
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4{
+          text-align: center;
+        }
+        .redes{
+          display: flex;
+        }
+      }
+    }
+  }
+  @include respo('mobile2'){
+    .hero-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .left{
+        margin-bottom: 8rem;
+        margin-left: 0rem;
+        @include flex-mobile;
+        .txt1{
+          @include flex-mobile;
+          p{
+            font-size: 1.6rem;
+          }
+        }
+
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4{
+          text-align: center;
+        }
+        .redes{
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  padding: 3.2rem;
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: .8rem;
+    }
+    span{
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+    .inline{
+      display: inline;
+    }
+  }
+  @include respo('mobile'){
+    .hero-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
